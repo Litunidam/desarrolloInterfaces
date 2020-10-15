@@ -1,0 +1,40 @@
+<!DOCTYPE mensaje [
+    !ELEMENT mensaje(remite,destinatario,)
+    !ELEMENT remite (nombre,email)
+    !ELEMENT destinatario (nombre,email)
+    !ELEMENT nombre (#PCDATA)
+    !ELEMENT email (#PCDATA)
+    !ELEMENT asunto (#PCDATA)
+    !ELEMENT texto (parrafo+)
+    !ELEMENT parrafo (#PCDATA)
+]>
+
+<mensaje>
+    <remite>
+        <nombre>Alfredo Reino</nombre>
+        <email>alf@ibium.com</nombre>
+    </remite>
+   
+    <destinatario>
+        <nombre>Bill Clinton</nombre>
+        <email>presidente@whitehouse.gov</email>
+    </destinatario>
+
+    <asunto>Hola Bill</asunto>
+
+    <texto>
+        <parrafo>
+            ¿Hola qué tal?
+        </parrafo>
+
+        <parrafo>
+            Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto.
+        </parrafo>
+
+        <parrafo>
+            Un saludo.
+        </parrafo>
+    </texto>
+
+
+</mensaje>

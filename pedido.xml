@@ -1,0 +1,14 @@
+<!DOCTYPE pedido[
+    <!ELEMENT pedido (nombre,nombrePedido,direccion,fecha)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nombrePedido (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+]>
+
+<pedido>
+    <nombre>Juan Delgado Martínez</nombre>
+    <nombrePedido>bicicleta A2023</nombrePedido>
+    <direccion>calle barco 4, tercer piso, letra A</direccion>
+    <fecha>19-5-2000</fecha>
+</pedido>
