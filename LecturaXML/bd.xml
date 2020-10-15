@@ -1,0 +1,16 @@
+<ventas>
+
+    <coche>
+        <matricula></matricula>
+        <marca></marca>
+        <modelo></modelo>
+        <color></color>
+        <precio></precio>    
+    </coche>
+    
+    
+    
+    
+    
+
+</ventas>
