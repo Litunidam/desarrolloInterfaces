@@ -1,0 +1,79 @@
+<ventas>
+    <cliente id = "CL1">
+        <nif>92873498</nif>
+        <nombre>Eufrasio</nombre>
+        <direccion>Vallas 7</direccion>
+        <ciudad>Chinchon</ciudad>
+        <numTelefono>98129838</numTelefono>
+        <coche id = "C1">
+            <matricula>81723MMM</matricula>
+            <marca>Citroen</marca>
+            <modelo>C5</modelo>
+            <color>Azul</color>
+            <precio>90000</precio>
+            <revision id = "R1">
+                <cambioFiltro>no</cambioFiltro>
+                <cambioAceite>si</cambioAceite>
+                <cambioFrenos>si</cambioFrenos>
+                <otros>nada</otros>
+            </revision>
+        </coche>
+        <coche id = "C2">
+            <matricula>matricula2</matricula>
+            <marca>marca2</marca>
+            <modelo>modelo2</modelo>
+            <color>color2</color>
+            <precio>precio2</precio>
+            <revision id = "R2">
+                <cambioFiltro>revision2</cambioFiltro>
+                <cambioAceite>revision2</cambioAceite>
+                <cambioFrenos>revision2</cambioFrenos>
+                <otros>revision2</otros>
+            </revision>
+        
+        </coche>
+    </cliente>
+    <cliente id = "CL2">
+        <nif>82739847</nif>
+        <nombre>Germam</nombre>
+        <direccion>Valecals 7</direccion>
+        <ciudad>Murcia</ciudad>
+        <numTelefono>98727318</numTelefono>
+        <coche id = "C1">
+            <matricula>985147TWE</matricula>
+            <marca>Nisan</marca>
+            <modelo>Cashqai</modelo>
+            <color>Rojo</color>
+            <precio>900</precio>
+            <revision id = "R3">
+                <cambioFiltro>si</cambioFiltro>
+                <cambioAceite>no</cambioAceite>
+                <cambioFrenos>si</cambioFrenos>
+                <otros>nada</otros>
+            </revision>
+        </coche>
+    </cliente>
+</ventas>
+<!-- 
+    <!DOCTYPE ventas[
+    <!ELEMENT ventas (cliente*)>
+    <!ELEMENT cliente (nif,direccion,ciudad,numTelefono,coche*)>
+    <!ATTLIST cliente id ID #REQUIRED>
+    <!ELEMENT nif(#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT numTelefono (#PCDATA)>
+    <!ELEMENT coche (matricula,marca,modelo,color,precio,revision?)>
+    <!ATTLIST coche id ID #REQUIRED>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT revision (cambioFiltro,cambioAceite,cambioFrenos,otros)>
+    <!ATTLIST revision id ID #REQUIRED>
+    <!ELEMENT cambioFiltro (#PCDATA)>
+    <!ELEMENT cambioAceite (#PCDATA)>
+    <!ELEMENT cambioFrenos (#PCDATA)>
+    <!ELEMENT otros (#PCDATA)>
+]>
+-->

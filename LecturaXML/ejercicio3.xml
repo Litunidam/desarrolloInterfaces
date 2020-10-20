@@ -1,0 +1,24 @@
+<!DOCTYPE ofertas [
+<!ELEMENT ofertas (cd*)>
+<!ELEMENT cd (titulo,artista,pais,discografica,precio,ano)>
+<!ATTLIST cd id ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT discografica (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT ano (#PCDATA)> 
+
+]>
+
+<ofertas>
+    <cd id="C1">
+        <titulo></titulo>
+        <artista></artista>
+        <pais></pais>
+        <discografica></discografica>
+        <precio></precio>
+        <ano></ano>
+    </cd>
+
+</ofertas>

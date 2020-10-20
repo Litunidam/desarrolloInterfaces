@@ -4,7 +4,6 @@ import java.io.File;
 import java.util.Scanner;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import static jdk.nashorn.internal.objects.NativeError.printStackTrace;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -27,12 +26,12 @@ public class CdOfferts {
 
             System.out.println("--------------------------------------------");
             System.out.println("-------------------Menu---------------------");
-            System.out.println("Mostrar TÃ­tulo");
+            System.out.println("Mostrar Título");
             System.out.println("Mostrar Artista");
-            System.out.println("Mostrar PaÃ­s");
-            System.out.println("Mostrar CompaÃ±Ã­aDiscogrÃ¡fica");
+            System.out.println("Mostrar País");
+            System.out.println("Mostrar CompañíaDiscográfica");
             System.out.println("Mostrar Precio");
-            System.out.println("Mostrar AÃ±oDePublicacion");
+            System.out.println("Mostrar AñoDePublicacián");
             System.out.println("Mostrar todo");
             System.out.println("-------------------Menu---------------------");
             System.out.println("--------------------------------------------");
@@ -43,7 +42,7 @@ public class CdOfferts {
             
             if(filter.equals("todo")){
                 
-                System.out.println("NÃºmero de ofertas: " + nList.getLength());
+                System.out.println("Número de ofertas: " + nList.getLength());
                 
                 for (int temp = 0; temp < nList.getLength(); temp++) {
                 Node nNode = nList.item(temp);
@@ -68,7 +67,7 @@ public class CdOfferts {
             }
                 
             }else{
-                System.out.println("NÃºmero de ofertas: " + nList.getLength());
+                System.out.println("Número de ofertas: " + nList.getLength());
                 showList(filter,nList);
             }
             
