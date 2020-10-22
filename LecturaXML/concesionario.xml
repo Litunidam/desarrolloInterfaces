@@ -1,6 +1,9 @@
 <concesionario>
   <coche id="1">
     <marca>Renault</marca>
+    <marca>Renault</marca>
+    <marca>Renault</marca>
+    <marca>Renault</marca>
     <modelo>Megane</modelo>
     <cilindrada>1.5</cilindrada>
   </coche>

@@ -20,22 +20,24 @@ public class LecturaXML {
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(file);
             doc.getDocumentElement().normalize();
-            NodeList nList = doc.getElementsByTagName("coche");
-            System.out.println("Número de coches: " + nList.getLength());
+            NodeList coches = doc.getElementsByTagName("coche");
+            System.out.println("Número de coches: " + coches.getLength());
 
-            for (int temp = 0; temp < nList.getLength(); temp++) {
-                Node nNode = nList.item(temp);
+            for (int temp = 0; temp < coches.getLength(); temp++) {
+                Node coche = coches.item(temp);
 
-                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element eElement = (Element) nNode;
+                if (coche.getNodeType() == Node.ELEMENT_NODE) {
+                    Element eCoche = (Element) coche;
 
-                    System.out.println("\nCoche id: " + eElement.getAttribute("id"));
+                    System.out.println("\nCoche id: " + eCoche.getAttribute("id"));
+                    NodeList marcasCoche = eCoche.getElementsByTagName("marca");
+                    
                     System.out.println("Marca: "
-                            + eElement.getElementsByTagName("marca").item(0).getTextContent());
+                            + eCoche.getElementsByTagName("marca").item(0).getTextContent());
                     System.out.println("Modelo: "
-                            + eElement.getElementsByTagName("modelo").item(0).getTextContent());
+                            + eCoche.getElementsByTagName("modelo").item(0).getTextContent());
                     System.out.println("Cilindrada: "
-                            + eElement.getElementsByTagName("cilindrada").item(0).getTextContent());
+                            + eCoche.getElementsByTagName("cilindrada").item(0).getTextContent());
                 }
             }
         } catch (Exception e) {
